@@ -1,0 +1,34 @@
+.navbar {
+  background-color: black;
+  padding: 16px;
+  border-bottom: 2px solid #444;
+}
+
+.navlist {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navlist li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navlist li a:hover {
+  color: #facc15; 
+}
+
+@media (max-width: 768px) {
+  .navlist {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

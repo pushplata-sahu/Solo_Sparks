@@ -19,7 +19,8 @@
   }
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   display: flex;
@@ -47,21 +48,6 @@ html, body {
   text-align: center;
 }
 
-.mainnav ul {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  flex-wrap: wrap;
-  gap: 16px;
-  padding: 0;
-}
-
-.mainnav ul li {
-  list-style: none;
-  margin: 0 12px;
-  font-weight: bold;
-}
-
 .h1 {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -83,7 +69,6 @@ html, body {
   flex-wrap: wrap;
 }
 
-
 .section {
   display: flex;
   flex-direction: row;
@@ -100,7 +85,7 @@ html, body {
 .card {
   background-color: white;
   color: black;
-  flex: 0 0 auto; /* Prevent shrinking */
+  flex: 0 0 auto;
   width: 300px;
   padding: 24px;
   border-radius: 12px;
@@ -188,52 +173,9 @@ html, body {
   margin-bottom: 8px;
 }
 
-
-@media (max-width: 768px) {
-  .main {
-    padding: 2rem 1rem;
-  }
-
-  .h1 {
-    font-size: 1.75rem;
-    line-height: 2.2rem;
-  }
-
-  .p {
-    font-size: 18px;
-  }
-
-  .btn {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .features-heading {
-    font-size: 20px;
-  }
-
-  .features-subtitle {
-    font-size: 14px;
-  }
-
-  .features-list {
-    font-size: 14px;
-  }
-
-  .card {
-    width: 260px;
-  }
-}
-
 @media (max-width: 480px) {
   .mainnav ul {
-    flex-direction: column;
-    align-items: center;
     gap: 8px;
-  }
-
-  .mainnav ul li {
-    margin: 4px 0;
   }
 
   .card {
