@@ -19,7 +19,8 @@ export default function LoginPage() {
     setLoading(true);
     setError("");
 
-    const backendURL = "http://localhost:5000";  
+    const backendURL = "https://solosparksbackend-production.up.railway.app";
+
 
     try {
       const res = await fetch(`${backendURL}/api/login`, {

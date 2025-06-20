@@ -21,8 +21,8 @@ export default function SignupPage() {
   const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault();
 
-   
-    const backendURL = "http://localhost:5000";  
+    // 👇 Replace this with your actual Railway backend URL:
+    const backendURL = "https://solosparksbackend-production.up.railway.app";
 
     try {
       const res = await fetch(`${backendURL}/api/signup`, {
@@ -37,7 +37,7 @@ export default function SignupPage() {
       }
 
       const data = await res.json();
-      alert(data.message); 
+      alert(data.message);
     } catch (err: any) {
       console.error("Signup Error:", err.message);
       alert("Signup failed: " + err.message);
