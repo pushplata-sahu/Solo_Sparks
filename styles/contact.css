@@ -2,7 +2,7 @@
   max-width: 500px;
   margin: 40px auto;
   padding: 30px;
-  background: #f9f9f9;
+  background: gray; /* Dark Gray */
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -11,7 +11,7 @@
   font-size: 20px;
   margin-bottom: 20px;
   text-align: center;
-  color: #333;
+  color: #fff; /* White for dark background */
 }
 
 .contact-form input,
@@ -21,7 +21,8 @@
   margin-bottom: 14px;
   border: 1px solid #ccc;
   border-radius: 8px;
-  color: black;
+  color: #fff; /* White text */
+  background-color: #575656; /* Dark input box */
   font-weight: 500;
 }
 
@@ -49,8 +50,18 @@
 .form-message {
   margin-top: 15px;
   text-align: center;
-  color: green;
+  color: #5df75d;
   font-weight: 500;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 2px solid #191a1b;
+  background-color: #555; /* Slightly lighter focus */
+  color: #fff;
+  box-shadow: 0 0 4px rgba(74, 144, 226, 0.4);
+  transition: all 0.2s ease;
 }
 
 /* ✅ Responsive Media Queries */
@@ -92,3 +103,5 @@
     height: 80px;
   }
 }
+
+

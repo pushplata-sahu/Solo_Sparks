@@ -1,10 +1,10 @@
 .auth-container {
-  max-width: 700px;
-  margin: 100px auto;
-  padding: 40px 35px;
-  background-color: #ffffff;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: gray;
   border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(208, 170, 170, 0.12);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-family: 'Segoe UI', sans-serif;
 }
@@ -13,7 +13,7 @@
   font-size: 26px;
   font-weight: 600;
   margin-bottom: 25px;
-  color: #222;
+  color: #fff;
 }
 
 .auth-form {
@@ -25,29 +25,31 @@
 .auth-form input {
   width: 100%;
   padding: 12px;
-  border-radius: 6px;
+  border-radius: 8px;
   border: 1px solid #ccc;
   font-size: 16px;
-  color: #000;
-  background-color: #f9f9f9;
+  background-color: #575656;
+  color: #fff;
+  font-weight: 500;
   transition: all 0.3s ease;
 }
 
 .auth-form input:focus {
-  border-color: #555;
-  background-color: #fff;
+  border: 2px solid #404142;
+  background-color: #555;
   outline: none;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1); /* ✅ Subtle glow */
+  box-shadow: 0 0 4px rgba(74, 144, 226, 0.4);
+  color: #fff;
 }
 
 .auth-form button {
+  width: 100%;
   padding: 12px;
-  background-color: #000;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 500;
-  border-radius: 6px;
+  background-color: black;
+  color: white;
   border: none;
+  border-radius: 8px;
+  font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -61,20 +63,45 @@
   cursor: not-allowed;
 }
 
-
 .error-message {
-  color: red;
+  color: #ff6b6b;
   font-size: 0.9rem;
   margin-top: -10px;
 }
 
+/* ✅ Mobile View Fixes */
 @media (max-width: 768px) {
   .auth-container {
     max-width: 90%;
-    padding: 30px 20px;
+    margin: 30px auto;
+    padding: 24px 16px;
   }
 
   .auth-title {
     font-size: 22px;
+  }
+
+  .auth-form input,
+  .auth-form button {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-container {
+    max-width: 95%;
+    margin: 20px auto;
+    padding: 20px 14px;
+  }
+
+  .auth-title {
+    font-size: 20px;
+  }
+
+  .auth-form input,
+  .auth-form button {
+    font-size: 0.9rem;
+    padding: 9px;
   }
 }

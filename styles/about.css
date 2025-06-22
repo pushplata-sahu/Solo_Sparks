@@ -29,18 +29,6 @@
   color: #ddd;
 }
 
-.about-container ul {
-  margin-top: 1rem;
-  padding-left: 1.5rem;
-}
-
-.about-container ul li {
-  margin: 0.5rem 0;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #ccc;
-}
-
 @media (max-width: 768px) {
   .about-container {
     padding: 2rem 1.5rem;
@@ -54,8 +42,7 @@
     font-size: 1.3rem;
   }
 
-  .about-container p,
-  .about-container ul li {
+  .about-container p {
     font-size: 0.95rem;
   }
 }
@@ -73,8 +60,7 @@
     font-size: 1.1rem;
   }
 
-  .about-container p,
-  .about-container ul li {
+  .about-container p {
     font-size: 0.9rem;
   }
 }

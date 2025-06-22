@@ -7,14 +7,24 @@
   flex-direction: row;
 }
 
+/* Mobile Header */
 .dashboard-header {
   display: none;
+}
+
+.hamburger {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  z-index: 1001;
 }
 
 /* Sidebar */
 .dashboard-sidebar {
   width: 230px;
-  background-color: white;
+   background: gray;
   color: black;
   padding: 2rem 1rem;
   display: flex;
@@ -22,6 +32,7 @@
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   transition: left 0.3s ease;
+  position: relative; /* default for desktop */
 }
 
 /* Sidebar heading */
@@ -74,7 +85,7 @@
 }
 
 .dashboard-card {
-  background-color: white;
+    background: gray;
   color: black;
   padding: 1.5rem;
   border-radius: 12px;
@@ -109,7 +120,7 @@
   }
 }
 
-/* Mobile view fix */
+/* ✅ Mobile View Styles */
 @media (max-width: 600px) {
   .dashboard-layout {
     flex-direction: column;
@@ -122,13 +133,9 @@
     background-color: #000;
     color: white;
     padding: 1rem;
-  }
-
-  .hamburger {
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1002;
   }
 
   .dashboard-sidebar {
@@ -137,7 +144,7 @@
     left: -250px;
     width: 230px;
     height: 100vh;
-    background-color: white;
+      background: gray;
     transition: left 0.3s ease-in-out;
   }
 

@@ -75,23 +75,20 @@ body {
   flex-wrap: wrap;
 }
 
+
 .section {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: stretch;
   gap: 20px;
   margin-top: 50px;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  padding: 0 1rem;
-  scroll-snap-type: x mandatory;
+  flex-wrap: wrap;
 }
 
 .card {
-  background-color: white;
+  background-color: gray;
   color: black;
-  flex: 0 0 auto;
   width: 300px;
   padding: 24px;
   border-radius: 12px;
@@ -101,12 +98,14 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  scroll-snap-align: start;
 }
 
 .card:hover {
   transform: translateY(-5px);
 }
+
+
+
 
 .card h2 {
   font-size: 20px;
@@ -143,26 +142,28 @@ body {
   margin-top: auto;
   z-index: 1;
 }
-
-
 .features-clean {
-  margin-top: 100px;
+  margin-top: 40px; /* ✅ Reduced spacing */
   padding: 20px;
   background-color: transparent;
-  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .features-heading {
-  font-size: 24px;
-  margin-bottom: 12px;
+  font-size: 28px;
+  margin-bottom: 16px;
   font-weight: bold;
   color: #fff;
+  text-align: center;
 }
 
 .features-subtitle {
   font-size: 16px;
   margin-bottom: 24px;
   color: #ccc;
+  text-align: left;
 }
 
 .features-list {
@@ -171,20 +172,25 @@ body {
   font-size: 15px;
   line-height: 1.8;
   color: #bbb;
+  text-align: left;
 }
+
+
 
 .features-list li {
   margin-bottom: 8px;
 }
 
-@media (max-width: 480px) {
-  .mainnav ul {
-    gap: 8px;
+@media (max-width: 600px) {
+  .section {
+    flex-direction: column;
+    align-items: center;
   }
 
   .card {
-    padding: 16px;
-    width: 240px;
+    width: 100%;            /* Full width of container */
+    max-width: 360px;       /* Increased max-width */
+    padding: 20px;          /* Comfortable spacing */
   }
 
   .card h2 {
@@ -195,3 +201,23 @@ body {
     font-size: 13px;
   }
 }
+
+
+@media (max-width: 480px) {
+  .h1 {
+    font-size: 1.75rem; /* Reduced font size for one-line display */
+    line-height: 2.2rem;
+    margin-bottom: 4px;
+    white-space: nowrap; /* Force single line */
+  }
+
+  .features-heading {
+    font-size: 18px; /* ✅ Updated font size */
+    white-space: nowrap; /* Prevent wrapping */
+  }
+
+  .features-clean {
+    margin-top: 24px; /* Reduce top spacing above "Why Choose Us" */
+  }
+}
+
