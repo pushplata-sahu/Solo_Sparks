@@ -48,6 +48,12 @@ body {
   text-align: center;
 }
 
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .h1 {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -128,18 +134,16 @@ body {
 }
 
 .footer {
-  margin-top: 60px;
-  padding: 20px;
+  background-color: #111;
+  color: white;
+  padding: 1.5rem 1rem;
   text-align: center;
-  font-size: 14px;
-  color: #aaa;
+  font-size: 0.9rem;
   border-top: 1px solid #333;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
+  margin-top: auto;
+  z-index: 1;
 }
+
 
 .features-clean {
   margin-top: 100px;
