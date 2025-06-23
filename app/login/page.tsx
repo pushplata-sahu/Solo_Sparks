@@ -56,27 +56,33 @@ export default function LoginPage() {
 
   return (
     <div className="auth-container">
-      <h2 className="auth-title">Login</h2>
-      <form className="auth-form" onSubmit={handleSubmit}>
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          required
-          onChange={handleChange}
-        />
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          required
-          onChange={handleChange}
-        />
-        <button type="submit" disabled={loading}>
-          {loading ? "Logging in..." : "Login"}
-        </button>
-        {error && <p className="error-message">{error}</p>}
-      </form>
-    </div>
+  <h2 className="auth-title">Login</h2>
+  <form className="auth-form" onSubmit={handleSubmit}>
+    <input
+      type="email"
+      name="email"
+      placeholder="Email"
+      required
+      onChange={handleChange}
+    />
+    <input
+      type="password"
+      name="password"
+      placeholder="Password"
+      required
+      onChange={handleChange}
+    />
+    <button type="submit" disabled={loading}>
+      {loading ? "Logging in..." : "Login"}
+    </button>
+    {error && <p className="error-message">{error}</p>}
+  </form>
+
+  {/* ✅ Added Sign Up redirect */}
+  <p className="auth-switch-text">
+    Don’t have an account? <a href="/signup">Sign up here</a>
+  </p>
+</div>
+
   );
 }

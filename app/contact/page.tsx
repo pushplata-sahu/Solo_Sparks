@@ -2,9 +2,6 @@
 import { useState } from "react";
 import "../../styles/contact.css";
 
-
-
-
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",

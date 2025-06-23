@@ -21,7 +21,6 @@ export default function SignupPage() {
   const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // 👇 Replace this with your actual Railway backend URL:
     const backendURL = "https://solosparksbackend-production.up.railway.app";
 
     try {
@@ -78,6 +77,9 @@ export default function SignupPage() {
         />
         <button type="submit">Sign Up</button>
       </form>
+      <p className="auth-switch-text">
+        Already have an account? <a href="/login">Login</a>
+      </p>
     </div>
   );
 }

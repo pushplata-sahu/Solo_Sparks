@@ -1,12 +1,12 @@
 .auth-container {
-  max-width: 500px;
+  max-width: 300px;
   margin: 40px auto;
   padding: 30px;
-  background-color: gray;
+ background: #292727;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
   text-align: center;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .auth-title {
@@ -44,8 +44,8 @@
 
 .auth-form button {
   padding: 12px;
-  background-color: black;
-  color: white;
+  background-color: rgb(241, 239, 239);
+  color: rgb(14, 14, 14);
   font-size: 16px;
   font-weight: 500;
   border-radius: 6px;
@@ -58,12 +58,32 @@
   background-color: #333;
 }
 
-/* ✅ Mobile Responsive Fixes */
+.auth-switch-text {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 14px;
+  color: #f5f2f2; /* Darker text */
+  font-weight: 600; /* Bold */
+}
+
+.auth-switch-text a {
+  color: #eab308; /* Highlighted link color */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.auth-switch-text a:hover {
+  color: #facc15;
+  text-decoration: underline;
+}
+
+/* ✅ Tablet & Small Laptops */
 @media (max-width: 768px) {
   .auth-container {
-    max-width: 90%;
-    margin: 30px auto;
-    padding: 24px 16px;
+    max-width: 90%; /* was 80% */
+    margin: 24px auto; /* centered with tighter top/bottom */
+    padding: 20px 14px; /* reduced padding */
   }
 
   .auth-title {
@@ -73,24 +93,25 @@
   .auth-form input,
   .auth-form button {
     font-size: 15px;
-    padding: 10px;
+    padding: 9px;
   }
 }
 
+/* ✅ Mobile Phones */
 @media (max-width: 480px) {
   .auth-container {
-    max-width: 95%;
-    margin: 20px auto;
-    padding: 20px 14px;
+    max-width: 85%; /* was 95% */
+    margin: 20px auto; /* even tighter spacing */
+    padding: 16px 10px; /* reduced padding */
   }
 
   .auth-title {
-    font-size: 20px;
+    font-size: 18px; /* slightly smaller */
   }
 
   .auth-form input,
   .auth-form button {
-    font-size: 14px;
-    padding: 9px;
+    font-size: 16px;
+    padding: 8px;
   }
 }

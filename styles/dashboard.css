@@ -24,12 +24,12 @@
 /* Sidebar */
 .dashboard-sidebar {
   width: 230px;
-   background: gray;
-  color: black;
+background: #292727;
+  color: rgb(237, 236, 236);
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(55, 55, 55, 0.4), 0 0 10px rgba(250, 204, 21, 0.1);
   z-index: 1000;
   transition: left 0.3s ease;
   position: relative; /* default for desktop */
@@ -40,7 +40,7 @@
   font-size: 1.5rem;
   margin-bottom: 2rem;
   text-align: center;
-  color: #060403;
+  color: #f2efee;
 }
 
 .dashboard-sidebar ul {
@@ -54,11 +54,15 @@
   transition: color 0.2s ease, background-color 0.2s ease;
   padding: 0.4rem 0.8rem;
   border-radius: 8px;
+  -webkit-transition: color 0.2s ease, background-color 0.2s ease;
+  -moz-transition: color 0.2s ease, background-color 0.2s ease;
+  -ms-transition: color 0.2s ease, background-color 0.2s ease;
+  -o-transition: color 0.2s ease, background-color 0.2s ease;
 }
 
 .dashboard-sidebar li:hover {
   background-color: #ffcc00;
-  color: black;
+  color: rgb(239, 234, 234);
 }
 
 /* Main content */
@@ -85,11 +89,11 @@
 }
 
 .dashboard-card {
-    background: gray;
-  color: black;
+background: #292727;
+  color: rgb(241, 237, 237);
   padding: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 16px rgba(55, 55, 55, 0.4), 0 0 10px rgba(250, 204, 21, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   height: 220px;
   width: 100%;
@@ -144,7 +148,7 @@
     left: -250px;
     width: 230px;
     height: 100vh;
-      background: gray;
+    background: #1c1a1a;
     transition: left 0.3s ease-in-out;
   }
 
@@ -165,5 +169,8 @@
   .dashboard-card {
     height: auto;
     padding: 1.2rem;
+  }
+  .dashboard-heading {
+    margin-top: 5px;
   }
 }

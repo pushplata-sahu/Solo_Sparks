@@ -1,14 +1,19 @@
 .auth-container {
-  max-width: 500px;
+  max-width: 300px;
   margin: 40px auto;
   padding: 30px;
-  background-color: gray;
+   background: #292727;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   box-shadow:
+    0 8px 16px rgba(55, 55, 55, 0.4),
+    0 0 10px rgba(250, 204, 21, 0.1);
   text-align: center;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
-
+.auth-container:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.5), 0 0 14px #5b5a5a;
+}
 .auth-title {
   font-size: 26px;
   font-weight: 600;
@@ -45,8 +50,8 @@
 .auth-form button {
   width: 100%;
   padding: 12px;
-  background-color: black;
-  color: white;
+  background-color: rgb(246, 242, 242);
+  color: rgb(17, 17, 17);
   border: none;
   border-radius: 8px;
   font-weight: bold;
@@ -69,10 +74,30 @@
   margin-top: -10px;
 }
 
+.auth-switch-text {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 14px;
+  color: #f4eded; /* ⬅️ slightly darker for base text */
+  font-weight: 600; /* ⬅️ bold */
+}
+
+.auth-switch-text a {
+  color: #eab308; /* ⬅️ dark yellow */
+  text-decoration: none;
+  font-weight: 600; /* ⬅️ bold */
+  transition: color 0.3s ease;
+}
+
+.auth-switch-text a:hover {
+  color: #facc15; /* ⬅️ bright yellow on hover */
+  text-decoration: underline;
+}
+
 /* ✅ Mobile View Fixes */
 @media (max-width: 768px) {
   .auth-container {
-    max-width: 90%;
+    max-width: 80%;
     margin: 30px auto;
     padding: 24px 16px;
   }
@@ -90,9 +115,9 @@
 
 @media (max-width: 480px) {
   .auth-container {
-    max-width: 95%;
-    margin: 20px auto;
-    padding: 20px 14px;
+    max-width: 80%;
+    margin: 30px auto;
+    padding: 16px 10px;
   }
 
   .auth-title {

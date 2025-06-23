@@ -2,9 +2,9 @@
   max-width: 500px;
   margin: 40px auto;
   padding: 30px;
-  background: gray; /* Dark Gray */
+  background: #292727;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(55, 55, 55, 0.4), 0 0 10px rgba(250, 204, 21, 0.1);
 }
 
 .contact-title {
@@ -34,8 +34,8 @@
 .contact-form button {
   width: 100%;
   padding: 12px;
-  background-color: black;
-  color: white;
+  background-color: rgb(246, 243, 243);
+  color: rgb(14, 14, 14);
   border: none;
   border-radius: 8px;
   font-weight: bold;
@@ -85,7 +85,7 @@
 @media (max-width: 480px) {
   .contact-container {
     margin: 20px 10px;
-    padding: 20px;
+    padding: 16px;
   }
 
   .contact-title {
@@ -103,5 +103,3 @@
     height: 80px;
   }
 }
-
-
